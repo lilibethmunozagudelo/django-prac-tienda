@@ -1,0 +1,47 @@
+{% extends 'main.html' %} {% block content %}
+<h1>Aqui estan los productos</h1>
+<h2>Productos</h2>
+<ul>
+  {% for i in produ %}
+  <li>{{i}}</li>
+  {% endfor %}
+</ul>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">TABLA NUMERO 1</th>
+        <th scope="col">PRODUCTOS</th>
+        <th scope="col">CATEGORIA</th>
+        <th scope="col">CANTIDAD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Lapiz</td>
+        <td>Escolar</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>cuaderno</td>
+        <td>Escolar</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Borrador</td>
+        <td>Escolar</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>calculadora </td>
+        <td>Escolar</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+  </table>
+</table>
+{% endblock content %}

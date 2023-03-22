@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block content %}
+    <h1>Estos son los productos del inventario</h1>
+    <h2>Inventario</h2>
+    <ul>
+        {% for i in inv %}
+        <li>{{i}}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %} 
